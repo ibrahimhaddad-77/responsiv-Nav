@@ -183,6 +183,9 @@ nav a {
     width: 13px;
     height: 13px;
     border-radius: 50% 50%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
    
     left: -4px;
     top: -2px;
@@ -273,6 +276,9 @@ nav a {
     width: 15px;
     height: 15px;
     border-radius: 50% 50%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
    
     left: -4px;
     top: -3px;

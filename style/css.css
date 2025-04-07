@@ -18,7 +18,7 @@ a {
 }
 
 .container {
-  width: 97%;
+  width: 95%;
   margin: auto;
 }
                                               /* Nav-Top */
@@ -43,7 +43,7 @@ a {
 .nav-top .nav-top-left {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1.7rem;
   align-items: center;
 }
 
@@ -58,6 +58,7 @@ a {
 .nav-top-logo {
   display: none;
 }
+
 
 .nav-top-Right a {
   color: rgb(207, 184, 49);
@@ -103,8 +104,8 @@ nav .flex,
 
 .nav-R ul .nav-logo {
   margin-left: 55px;
-  width: 180;
-  height: 50px;
+  width: 160px;
+  /* height: 50px; */
 }
 
 #ask-link {
@@ -169,7 +170,23 @@ nav a {
 }
 
                                              /* region of responsive */
-@media (max-width: 1000px) {
+
+
+@media (max-width: 323px)      {
+
+  *{
+
+    font-size: 14px
+  }
+  .call-icon::before {
+ 
+    width: 13px;
+    height: 13px;
+    border-radius: 50% 50%;
+   
+    left: -4px;
+    top: -2px;
+  }
   .nav-top {
     background-image: none;
     display: flex;
@@ -197,6 +214,7 @@ nav a {
 
   .nav-top-list {
     display: flex;
+    /* margin-left: 5px; */
   }
 
   .nav-top .nav-top1-1 {
@@ -208,9 +226,9 @@ nav a {
   }
   .nav-top-Right .nav-top-logo {
     display: block;
-    margin-left: 55px;
-    width: 180;
-    height: 50px;
+    /* margin-left: 55px; */
+    width: 160px;
+    /* height: 50px; */
   }
   .nav-logo {
     display: none;
@@ -223,7 +241,7 @@ nav a {
     gap: 0;
   }
   .nav-left {
-    gap: 15px;
+    gap: 5px;
   }
   .nav-left .flex-whats,
   .flex-call {
@@ -234,6 +252,97 @@ nav a {
   .nav-left .call-icon,
   .nav-left .whats-icon {
     margin-left: 0px;
+    width: 35px;
+    height: 35px;
+  }
+  .nav-top {
+    height: 80px;
+    margin-bottom: 10px;
+  }
+}
+
+                                
+
+@media (min-width: 324px) and (max-width: 1000px) {
+  *{
+
+    font-size: 14px
+  }
+  .call-icon::before {
+ 
+    width: 15px;
+    height: 15px;
+    border-radius: 50% 50%;
+   
+    left: -4px;
+    top: -3px;
+  }
+  .nav-top {
+    background-image: none;
+    display: flex;
+    align-items: center;
+  }
+  .Search-icon-contaner {
+    width: 90px;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 50px;
+    /* text-align: left; */
+    display: flex;
+    justify-content: space-between;
+    color: var(--third-color);
+  }
+  .Search-icon-contaner:hover {
+    cursor: pointer;
+  }
+  .Search-icon-contaner::before {
+    content: "ابحث";
+    text-align: right;
+    color: rgba(0, 0, 0, 0.24);
+    font-size: 14px;
+  }
+
+  .nav-top-list {
+    display: flex;
+    /* margin-left: 5px; */
+  }
+
+  .nav-top .nav-top1-1 {
+    align-items: center;
+    padding-top: 0px;
+  }
+  .nav-top-Right p {
+    display: none;
+  }
+  .nav-top-Right .nav-top-logo {
+    display: block;
+    /* margin-left: 55px; */
+    width: 160px;
+    /* height: 50px; */
+  }
+  .nav-logo {
+    display: none;
+  }
+  .hid-with-small {
+    display: none;
+  }
+
+  .nav-R ul {
+    gap: 0;
+  }
+  .nav-left {
+    gap: 10px;
+  }
+  .nav-left .flex-whats,
+  .flex-call {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .nav-left .call-icon,
+  .nav-left .whats-icon {
+    margin-left: 0px;
+    margin-bottom: 5px;
     width: 35px;
     height: 35px;
   }
@@ -269,3 +378,4 @@ nav a {
   }
 }
                                             /* End region of responsive */
+

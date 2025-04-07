@@ -183,9 +183,7 @@ nav a {
     width: 13px;
     height: 13px;
     border-radius: 50% 50%;
-    display: flex;
-  align-items: center;
-  justify-content: center;
+     padding-top:1.5px
    
     left: -4px;
     top: -2px;
@@ -272,14 +270,10 @@ nav a {
     font-size: 14px
   }
   .call-icon::before {
- 
+   padding-top:1.5px
     width: 15px;
     height: 15px;
     border-radius: 50% 50%;
-    display: flex;
-  align-items: center;
-  justify-content: center;
-   
     left: -4px;
     top: -3px;
   }

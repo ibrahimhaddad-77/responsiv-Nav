@@ -155,8 +155,8 @@ nav .flex,
   height: 16px;
   border-radius: 50% 50%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items:center;
+  justify-content:center;
   position: absolute;
   left: -1px;
   top: -1px;
@@ -270,7 +270,7 @@ nav a {
     font-size: 14px
   }
   .call-icon::before {
-   padding-top:1.5px
+   padding-top:2.5px
     width: 15px;
     height: 15px;
     border-radius: 50% 50%;
